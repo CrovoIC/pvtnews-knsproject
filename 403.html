@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>PVT - KNS: ERROR403</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./assets/img/Book.webp">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700" rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/index.css" rel="stylesheet">
+	<style>
+		.description {
+			margin-left: 1em !important;
+			font-size: 1em !important;
+		}
+
+		.col-md-6 img {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		#services .row {
+			margin-top: 1em;
+			padding-bottom: 1em;
+			border-bottom: 2px solid #2B2B2B;
+		}
+
+		#services .col-md-6 {
+			border-left: 1px solid #2B2B2B;
+			border-right: 1px solid #2B2B2B;
+		}
+
+		.goog-te-banner-frame.skiptranslate {
+			display: none !important;
+		}
+
+		body {
+			top: 0px !important;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- ======= Header ======= -->
+	<header id="header" class="fixed-top">
+		<div class="container d-flex align-items-center justify-content-between">
+
+			<h1 class="logo">
+				<a href="">
+					<img src="./assets/img/403.png" alt="Logo"> 
+					<span style="position:relative;top:.15em;">PVT - KNS Project</span>
+				</a>
+			</h1>
+
+			<nav id="navbar" class="navbar">
+				<ul>
+					<li><a class=" nav-link " href="index.html">Trở lại trang cũ</a></li>
+			</nav><!-- .navbar -->
+
+		</div>
+	</header><!-- End Header -->
+
+	<!-- ======= Hero Section ======= -->
+	<section id="hero" class="d-flex align-items-center">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" style="display:block;margin-left:auto;margin-right:auto;">
+					<!-- Title -->
+					<h1 class="hero-text">
+						ERROR: 403-Forbidden<br>
+					</h1>
+					<h2 style="font-family: 'Open Sans'">
+						Ai cho?
+						<span style="font-size: small;"></span>
+					</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    	<!-- ======= Footer ======= -->
+	<footer id="footer">
+
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6 footer-contact">
+						<h3>PVT - KNS Project</h3>
+						<p>
+							Mã thứ tự bản tin: ERROR<br>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="container py-4">
+			<div class="copyright">
+				© Bản quyền thuộc về <strong><span>IC 2022 - 2023</span></strong>.
+			</div>
+			<div class="credits">
+				Thiết kế gốc bởi <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+			</div>
+		</div>
+
+	</footer><!-- End Footer -->
+
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script async defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script async defer src="assets/vendor/lazysizes.min.js"></script>
+	<script async defer src="assets/vendor/modernizr-custom.js"></script>
+	<script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script async defer src="assets/js/index.js"></script>
+	<script>
+		$('.datacounter').each(function () {
+			var $this = $(this),
+				countTo = $this.attr('data-count');
+
+			$({
+				countNum: $this.text()
+			}).animate({
+				countNum: countTo
+			},
+
+				{
+					duration: 1000,
+					easing: 'linear',
+					step: function () {
+						$this.text(commaSeparateNumber(Math.floor(this.countNum)));
+					},
+					complete: function () {
+						$this.text(commaSeparateNumber(this.countNum));
+						//alert('finished');
+					}
+				}
+			);
+		});
+		function commaSeparateNumber(val) {
+			while (/(\d+)(\d{3})/.test(val.toString())) {
+				val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+			}
+			return val;
+		}
+	</script>
+
+	<!-- google translate -->
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+		}
+	</script>
+	<script async defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
