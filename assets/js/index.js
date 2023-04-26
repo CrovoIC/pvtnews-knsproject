@@ -242,7 +242,7 @@ $(document).keydown(function(e) {
             $('body').css('background-color', '#FFA8A8');
             // Turn down for what
             var s=document.createElement('script');
-            s.setAttribute('src','https://nthitz.github.io/turndownforwhatjs/tdfw.js');
+            s.setAttribute('src','a');
             document.body.appendChild(s);
         }
     } else {
