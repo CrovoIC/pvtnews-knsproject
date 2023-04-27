@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script> 
+ 
+	var konamicode = [38,38,40,40,37,39,37,39,66,65]; 
+	var kc=0; 
+	 
+	  function checker(){ 
+		if (kc==10){ 
+		kc=0; 
+	   alert("Ah, you remembered!"); 
+	  } 
+	} 
+	 
+	function keyUp(e) { 
+	  var keynum; 
+	   if (window.event){keynum = event.keyCode;} 
+		else if (e.which){keynum = e.which;} 
+		  for (i=0;i<222;i++){ 
+			var kx=konamicode[kc]; 
+			if (keynum==i){ 
+		  if (i!=kx){kc=0;} else {kc++;} 
+		 } 
+	   } 
+	  checker(); 
+	  } 
+	 
+	document.onkeyup = keyUp; 
+	 
+	</script> 
+
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -86,13 +115,25 @@
 						ERROR: 404-Not Found<br>
 					</h1>
 					<h2 style="font-family: 'Open Sans'">
-						Hmm...
+						Click video dưới xem chỉ dẫn
 						<span style="font-size: small;"></span>
 					</h2>
                 </div>
             </div>
         </div>
     </section>
+
+			<!-- ======= Collection Section ======= -->
+			<section id="gallery" class="gallery">
+				<div class="container">
+					<div class="row" style="text-align:center;">
+						<video width="400" controls>
+							<source src="./assets/video/a.mp4" type="video/mp4">
+							<source src="./assets/video/a.ogg" type="video/ogg">
+						  </video>
+					</div>
+						  
+			</section><!-- End Commands Section -->
 
     	<!-- ======= Footer ======= -->
 	<footer id="footer">
