@@ -217,27 +217,6 @@
       selector: '.galleery-lightbox'
     });
 
-<<<<<<< HEAD
-=======
-	/*
-	* Konami code
-	*/
-function onKonamiCode(cb) {
-  var input = '';
-  var key = '38384040373937396665';
-  document.addEventListener('keydown', function (e) {
-    input += ("" + e.keyCode);
-    if (input === key) {
-      return cb();
-    }
-    if (!key.indexOf(input)) return;
-    input = ("" + e.keyCode);
-  });
-}
-
-onKonamiCode(function () {alert('\Hi')})
-	  
->>>>>>> b3a0c8c3c5ee58c4adf4cd92a46c29832b0c5d56
 })()
 
 
